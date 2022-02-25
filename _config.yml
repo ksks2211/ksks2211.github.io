@@ -40,7 +40,7 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: akatapata
+  name: Akatapata
   email: example@doamin.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
@@ -83,7 +83,7 @@ theme_mode:   # [light|dark]
 img_cdn: 'https://raw.githubusercontent.com/ksks2211/ksks2211.github.io/main/assets/img'
 
 # the avatar on sidebar, support local or CORS resources
-avatar: '/commons/profile.png'
+avatar: '/commons/profile.jpg'
 
 # boolean type, the global switch for ToC in posts.
 toc: true
