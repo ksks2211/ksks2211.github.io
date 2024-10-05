@@ -1,0 +1,46 @@
+name: Deploy React App from External Repository
+
+on:
+  push:
+    branches:
+      - main  # Adjust this to the branch in username.github.io to trigger the build
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout username.github.io repository
+        uses: actions/checkout@v3
+
+      - name: Clone the React project repository
+        run: |
+          git clone https://github.com/ksks2211/react-with-mui-demo-city-insights.git
+          cd react-with-mui-demo-city-insights
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'  # Use the Node.js version compatible with your React project
+
+      - name: Install dependencies
+        run: |
+          cd react-with-mui-demo-city-insights
+          npm install
+
+      - name: Build the React project
+        run: |
+          cd react-with-mui-demo-city-insights
+          npm run build
+
+      - name: Copy build to username.github.io repository
+        run: |
+          cp -r react-with-mui-demo-city-insights/dist/* .
+
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}  # Use the PAT stored in secrets
+          publish_dir: .
+          publish_branch: gh-pages          
