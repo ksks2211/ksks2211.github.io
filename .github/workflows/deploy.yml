@@ -33,14 +33,11 @@ jobs:
           cd react-with-mui-demo-city-insights
           npm run build
 
-      - name: Copy build to username.github.io repository
-        run: |
-          cp -r react-with-mui-demo-city-insights/dist/* .
 
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}  # Use the PAT stored in secrets
-          publish_dir: .
+          publish_dir: ./react-with-mui-demo-city-insights/dist
           publish_branch: gh-pages          
