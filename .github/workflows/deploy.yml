@@ -1,4 +1,4 @@
-name: Deploy React App from External Repository v1.0.1
+name: Deploy React App from External Repository v1.0.2
 
 on:
   push:
