@@ -1,4 +1,4 @@
-import{g as s,y as o,V as u,W as l}from"./index-DyaJpTGQ.js";import{t as m,b as f}from"./stringUtils-AV9mQpy6.js";import{c as g}from"./index-B-4LrsjG.js";import{u as h}from"./useTocNavigation-CUOiTL1Q.js";import"./AppRoutes-C5O3_JXX.js";const x=u(l)`
+import{g as s,y as o,V as u,W as l}from"./index-cZ1D_KhZ.js";import{t as m,b as f}from"./stringUtils-ClFdsDEA.js";import{c as g}from"./index-Dvc3hXL-.js";import{u as h}from"./useTocNavigation-DbdrChml.js";import"./AppRoutes-BQwMejlb.js";const x=u(l)`
   --padding-top: 3.5rem;
   width: 100%;
 
