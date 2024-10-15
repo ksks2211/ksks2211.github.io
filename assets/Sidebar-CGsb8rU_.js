@@ -1,4 +1,4 @@
-import{g as s,y as o,V as u,W as l}from"./index-cZ1D_KhZ.js";import{t as m,b as f}from"./stringUtils-ClFdsDEA.js";import{c as g}from"./index-Dvc3hXL-.js";import{u as h}from"./useTocNavigation-DbdrChml.js";import"./AppRoutes-BQwMejlb.js";const x=u(l)`
+import{g as s,y as o,V as u,W as l}from"./index-CnZ7neNp.js";import{t as m,b as f}from"./stringUtils-BssfpDtv.js";import{c as g}from"./index-Cv1dy4BU.js";import{u as h}from"./useTocNavigation-Df4T0BGz.js";import"./AppRoutes-BuMek3Vj.js";const x=u(l)`
   --padding-top: 3.5rem;
   width: 100%;
 
@@ -43,4 +43,4 @@ import{g as s,y as o,V as u,W as l}from"./index-cZ1D_KhZ.js";import{t as m,b as 
       }
     }
   }
-`;function y({city:t}){const{tocRef:e,focusedSection:c}=h(),i=s.useRef(null),n=()=>{i.current&&(clearTimeout(i.current),i.current=null)};s.useEffect(()=>()=>{n()},[]);const d=[m(t),"Demographics","Economy","Climate","Geography","History","Gallery"],p=({currentTarget:r})=>{const a=r.dataset.topic||t;e.current&&e.current(a),setTimeout(()=>{e.current&&e.current(a)},450),n(),i.current=setTimeout(()=>{e.current&&e.current(a)},900)};return o.jsx(x,{className:"bottom",children:o.jsx("ul",{children:d.map(r=>o.jsx("li",{"data-topic":r,onClick:p,className:g({focused:c===r}),children:r},r))})})}function k(){const{city:t}=f();return t?o.jsx(y,{city:t}):o.jsx("div",{children:"sidebar"})}export{k as default};
+`;function y({city:t}){const{tocRef:e,focusedSection:c}=h(),i=s.useRef(null),n=()=>{i.current&&(clearTimeout(i.current),i.current=null)};s.useEffect(()=>()=>{n()},[t]);const d=[m(t),"Demographics","Economy","Climate","Geography","History","Gallery"],p=({currentTarget:r})=>{const a=r.dataset.topic||t;e.current&&e.current(a),setTimeout(()=>{e.current&&e.current(a)},450),n(),i.current=setTimeout(()=>{e.current&&e.current(a)},900)};return o.jsx(x,{className:"bottom",children:o.jsx("ul",{children:d.map(r=>o.jsx("li",{"data-topic":r,onClick:p,className:g({focused:c===r}),children:r},r))})})}function k(){const{city:t}=f();return t?o.jsx(y,{city:t}):o.jsx("div",{children:"sidebar"})}export{k as default};
